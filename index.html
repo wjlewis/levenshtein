@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        border: 1px solid #444;
+        border-collapse: collapse;
+        font-family: monospace;
+        font-size: 16px;
+        margin-bottom: 4em;
+      }
+
+      th,
+      td {
+        border: 1px solid #444;
+      }
+
+      th {
+        background-color: #ddd;
+        font-weight: bold;
+      }
+
+      td {
+        cursor: help;
+      }
+
+      td:hover {
+        background-color: #aae;
+      }
+
+      th,
+      td > div {
+        padding: 10px;
+      }
+    </style>
+
+    <title>Example Tables</title>
+  </head>
+
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <th>t</th>
+          <th>e</th>
+          <th>a</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>t</th>
+          <td><div title="Skip t">2</div></td>
+          <td><div title="Delete t">3</div></td>
+          <td><div title="Delete t">3</div></td>
+          <td><div title="Delete t">3</div></td>
+        </tr>
+        <tr>
+          <th>h</th>
+          <td><div title="Replace h with t">2</div></td>
+          <td><div title="Delete h">2</div></td>
+          <td><div title="Delete h">2</div></td>
+          <td><div title="Delete h">2</div></td>
+        </tr>
+        <tr>
+          <th>e</th>
+          <td><div title="Insert t">2</div></td>
+          <td><div title="Skip e">1</div></td>
+          <td><div title="Replace e with a">1</div></td>
+          <td><div title="Delete e">1</div></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><div title="Insert t">3</div></td>
+          <td><div title="Insert e">2</div></td>
+          <td><div title="Insert a">1</div></td>
+          <td><div title="">0</div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <th>a</th>
+          <th>l</th>
+          <th>e</th>
+          <th>p</th>
+          <th>h</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>a</th>
+          <td><div title="Skip a">2</div></td>
+          <td><div title="Delete a">3</div></td>
+          <td><div title="Delete a">3</div></td>
+          <td><div title="Delete a">3</div></td>
+          <td><div title="Delete a">4</div></td>
+          <td><div title="Delete a">5</div></td>
+        </tr>
+        <tr>
+          <th>l</th>
+          <td><div title="Insert a">3</div></td>
+          <td><div title="Skip l">2</div></td>
+          <td><div title="Replace l with e">2</div></td>
+          <td><div title="Delete l">2</div></td>
+          <td><div title="Delete l">3</div></td>
+          <td><div title="Delete l">4</div></td>
+        </tr>
+        <tr>
+          <th>p</th>
+          <td><div title="Insert a">4</div></td>
+          <td><div title="Insert l">3</div></td>
+          <td><div title="Insert e">2</div></td>
+          <td><div title="Skip p">1</div></td>
+          <td><div title="Delete p">2</div></td>
+          <td><div title="Delete p">3</div></td>
+        </tr>
+        <tr>
+          <th>h</th>
+          <td><div title="Delete h">5</div></td>
+          <td><div title="Insert l">4</div></td>
+          <td><div title="Insert e">3</div></td>
+          <td><div title="Insert p">2</div></td>
+          <td><div title="Skip h">1</div></td>
+          <td><div title="Delete h">2</div></td>
+        </tr>
+        <tr>
+          <th>a</th>
+          <td><div title="Skip a">4</div></td>
+          <td><div title="Insert l">4</div></td>
+          <td><div title="Insert e">3</div></td>
+          <td><div title="Insert p">2</div></td>
+          <td><div title="Replace a with h">1</div></td>
+          <td><div title="Delete a">1</div></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><div title="Insert a">5</div></td>
+          <td><div title="Insert l">4</div></td>
+          <td><div title="Insert e">3</div></td>
+          <td><div title="Insert p">2</div></td>
+          <td><div title="Insert h">1</div></td>
+          <td><div title="">0</div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <th>s</th>
+          <th>a</th>
+          <th>t</th>
+          <th>u</th>
+          <th>r</th>
+          <th>d</th>
+          <th>a</th>
+          <th>y</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>s</th>
+          <td><div title="Skip s">3</div></td>
+          <td><div title="Insert a">3</div></td>
+          <td><div title="Replace s with t">2</div></td>
+          <td><div title="Delete s">2</div></td>
+          <td><div title="Delete s">3</div></td>
+          <td><div title="Delete s">3</div></td>
+          <td><div title="Delete s">4</div></td>
+          <td><div title="Delete s">5</div></td>
+          <td><div title="Delete s">6</div></td>
+        </tr>
+        <tr>
+          <th>u</th>
+          <td><div title="Insert s">4</div></td>
+          <td><div title="Insert a">3</div></td>
+          <td><div title="Insert t">2</div></td>
+          <td><div title="Skip u">1</div></td>
+          <td><div title="Delete u">2</div></td>
+          <td><div title="Delete u">2</div></td>
+          <td><div title="Delete u">3</div></td>
+          <td><div title="Delete u">4</div></td>
+          <td><div title="Delete u">5</div></td>
+        </tr>
+        <tr>
+          <th>n</th>
+          <td><div title="Insert s">5</div></td>
+          <td><div title="Insert a">4</div></td>
+          <td><div title="Insert t">3</div></td>
+          <td><div title="Insert u">2</div></td>
+          <td><div title="Replace n with r">1</div></td>
+          <td><div title="Delete n">1</div></td>
+          <td><div title="Delete n">2</div></td>
+          <td><div title="Delete n">3</div></td>
+          <td><div title="Delete n">4</div></td>
+        </tr>
+        <tr>
+          <th>d</th>
+          <td><div title="Insert s">5</div></td>
+          <td><div title="Insert a">4</div></td>
+          <td><div title="Insert t">3</div></td>
+          <td><div title="Insert u">2</div></td>
+          <td><div title="Insert r">1</div></td>
+          <td><div title="Skip d">0</div></td>
+          <td><div title="Delete d">1</div></td>
+          <td><div title="Delete d">2</div></td>
+          <td><div title="Delete d">3</div></td>
+        </tr>
+        <tr>
+          <th>a</th>
+          <td><div title="Insert s">6</div></td>
+          <td><div title="Skip a">5</div></td>
+          <td><div title="Insert t">4</div></td>
+          <td><div title="Insert u">3</div></td>
+          <td><div title="Insert r">2</div></td>
+          <td><div title="Insert d">1</div></td>
+          <td><div title="Skip a">0</div></td>
+          <td><div title="Delete a">1</div></td>
+          <td><div title="Delete a">2</div></td>
+        </tr>
+        <tr>
+          <th>y</th>
+          <td><div title="Insert s">7</div></td>
+          <td><div title="Insert a">6</div></td>
+          <td><div title="Insert t">5</div></td>
+          <td><div title="Insert u">4</div></td>
+          <td><div title="Insert r">3</div></td>
+          <td><div title="Insert d">2</div></td>
+          <td><div title="Insert a">1</div></td>
+          <td><div title="Skip y">0</div></td>
+          <td><div title="Delete y">1</div></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><div title="Insert s">8</div></td>
+          <td><div title="Insert a">7</div></td>
+          <td><div title="Insert t">6</div></td>
+          <td><div title="Insert u">5</div></td>
+          <td><div title="Insert r">4</div></td>
+          <td><div title="Insert d">3</div></td>
+          <td><div title="Insert a">2</div></td>
+          <td><div title="Insert y">1</div></td>
+          <td><div title="">0</div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <th>y</th>
+          <th>a</th>
+          <th>d</th>
+          <th>r</th>
+          <th>u</th>
+          <th>t</th>
+          <th>a</th>
+          <th>s</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>y</th>
+          <td><div title="Skip y">3</div></td>
+          <td><div title="Delete y">4</div></td>
+          <td><div title="Delete y">5</div></td>
+          <td><div title="Delete y">5</div></td>
+          <td><div title="Delete y">5</div></td>
+          <td><div title="Replace y with t">4</div></td>
+          <td><div title="Delete y">4</div></td>
+          <td><div title="Delete y">5</div></td>
+          <td><div title="Delete y">6</div></td>
+        </tr>
+        <tr>
+          <th>a</th>
+          <td><div title="Insert y">4</div></td>
+          <td><div title="Skip a">3</div></td>
+          <td><div title="Delete a">4</div></td>
+          <td><div title="Replace a with r">4</div></td>
+          <td><div title="Delete a">4</div></td>
+          <td><div title="Delete a">4</div></td>
+          <td><div title="Skip a">3</div></td>
+          <td><div title="Delete a">4</div></td>
+          <td><div title="Delete a">5</div></td>
+        </tr>
+        <tr>
+          <th>d</th>
+          <td><div title="Insert y">5</div></td>
+          <td><div title="Insert a">4</div></td>
+          <td><div title="Skip d">3</div></td>
+          <td><div title="Delete d">4</div></td>
+          <td><div title="Replace d with u">3</div></td>
+          <td><div title="Delete d">3</div></td>
+          <td><div title="Delete d">3</div></td>
+          <td><div title="Delete d">3</div></td>
+          <td><div title="Delete d">4</div></td>
+        </tr>
+        <tr>
+          <th>n</th>
+          <td><div title="Insert y">6</div></td>
+          <td><div title="Insert a">5</div></td>
+          <td><div title="Insert d">4</div></td>
+          <td><div title="Replace n with r">3</div></td>
+          <td><div title="Delete n">3</div></td>
+          <td><div title="Replace n with t">2</div></td>
+          <td><div title="Delete n">2</div></td>
+          <td><div title="Delete n">2</div></td>
+          <td><div title="Delete n">3</div></td>
+        </tr>
+        <tr>
+          <th>u</th>
+          <td><div title="Insert y">6</div></td>
+          <td><div title="Insert a">5</div></td>
+          <td><div title="Insert d">4</div></td>
+          <td><div title="Insert r">3</div></td>
+          <td><div title="Skip u">2</div></td>
+          <td><div title="Insert t">2</div></td>
+          <td><div title="Replace u with a">1</div></td>
+          <td><div title="Delete u">1</div></td>
+          <td><div title="Delete u">2</div></td>
+        </tr>
+        <tr>
+          <th>s</th>
+          <td><div title="Insert y">7</div></td>
+          <td><div title="Insert a">6</div></td>
+          <td><div title="Insert d">5</div></td>
+          <td><div title="Insert r">4</div></td>
+          <td><div title="Insert u">3</div></td>
+          <td><div title="Insert t">2</div></td>
+          <td><div title="Insert a">1</div></td>
+          <td><div title="Skip s">0</div></td>
+          <td><div title="Delete s">1</div></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><div title="Insert y">8</div></td>
+          <td><div title="Insert a">7</div></td>
+          <td><div title="Insert d">6</div></td>
+          <td><div title="Insert r">5</div></td>
+          <td><div title="Insert u">4</div></td>
+          <td><div title="Insert t">3</div></td>
+          <td><div title="Insert a">2</div></td>
+          <td><div title="Insert s">1</div></td>
+          <td><div title="">0</div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <th>s</th>
+          <th>i</th>
+          <th>t</th>
+          <th>t</th>
+          <th>i</th>
+          <th>n</th>
+          <th>g</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>k</th>
+          <td><div title="Replace k with s">3</div></td>
+          <td><div title="Delete k">3</div></td>
+          <td><div title="Delete k">4</div></td>
+          <td><div title="Delete k">5</div></td>
+          <td><div title="Delete k">5</div></td>
+          <td><div title="Delete k">6</div></td>
+          <td><div title="Delete k">6</div></td>
+          <td><div title="Delete k">6</div></td>
+        </tr>
+        <tr>
+          <th>i</th>
+          <td><div title="Insert s">3</div></td>
+          <td><div title="Skip i">2</div></td>
+          <td><div title="Delete i">3</div></td>
+          <td><div title="Delete i">4</div></td>
+          <td><div title="Skip i">4</div></td>
+          <td><div title="Delete i">5</div></td>
+          <td><div title="Delete i">5</div></td>
+          <td><div title="Delete i">5</div></td>
+        </tr>
+        <tr>
+          <th>t</th>
+          <td><div title="Insert s">4</div></td>
+          <td><div title="Insert i">3</div></td>
+          <td><div title="Skip t">2</div></td>
+          <td><div title="Delete t">3</div></td>
+          <td><div title="Delete t">4</div></td>
+          <td><div title="Delete t">4</div></td>
+          <td><div title="Delete t">4</div></td>
+          <td><div title="Delete t">4</div></td>
+        </tr>
+        <tr>
+          <th>t</th>
+          <td><div title="Insert s">5</div></td>
+          <td><div title="Insert i">4</div></td>
+          <td><div title="Insert t">3</div></td>
+          <td><div title="Skip t">2</div></td>
+          <td><div title="Delete t">3</div></td>
+          <td><div title="Delete t">3</div></td>
+          <td><div title="Delete t">3</div></td>
+          <td><div title="Delete t">3</div></td>
+        </tr>
+        <tr>
+          <th>e</th>
+          <td><div title="Insert s">6</div></td>
+          <td><div title="Insert i">5</div></td>
+          <td><div title="Insert t">4</div></td>
+          <td><div title="Insert t">3</div></td>
+          <td><div title="Replace e with i">2</div></td>
+          <td><div title="Delete e">2</div></td>
+          <td><div title="Delete e">2</div></td>
+          <td><div title="Delete e">2</div></td>
+        </tr>
+        <tr>
+          <th>n</th>
+          <td><div title="Insert s">6</div></td>
+          <td><div title="Insert i">5</div></td>
+          <td><div title="Insert t">4</div></td>
+          <td><div title="Insert t">3</div></td>
+          <td><div title="Insert i">2</div></td>
+          <td><div title="Skip n">1</div></td>
+          <td><div title="Replace n with g">1</div></td>
+          <td><div title="Delete n">1</div></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><div title="Insert s">7</div></td>
+          <td><div title="Insert i">6</div></td>
+          <td><div title="Insert t">5</div></td>
+          <td><div title="Insert t">4</div></td>
+          <td><div title="Insert i">3</div></td>
+          <td><div title="Insert n">2</div></td>
+          <td><div title="Insert g">1</div></td>
+          <td><div title="">0</div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <th>a</th>
+          <th>n</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>i</th>
+          <td><div title="Insert a">2</div></td>
+          <td><div title="Replace i with n">1</div></td>
+          <td><div title="Delete i">1</div></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><div title="Insert a">2</div></td>
+          <td><div title="Insert n">1</div></td>
+          <td><div title="">0</div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <th>o</th>
+          <th>f</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>i</th>
+          <td><div title="Replace i with o">2</div></td>
+          <td><div title="Delete i">2</div></td>
+          <td><div title="Delete i">2</div></td>
+        </tr>
+        <tr>
+          <th>n</th>
+          <td><div title="Insert o">2</div></td>
+          <td><div title="Replace n with f">1</div></td>
+          <td><div title="Delete n">1</div></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><div title="Insert o">2</div></td>
+          <td><div title="Insert f">1</div></td>
+          <td><div title="">0</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
